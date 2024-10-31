@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+:root {
+  --bg-primary: #104ca7;
+  --bg-secondary: #eaeaea;
+  --txt-primary: #f7f7f7;
+  --txt-secondary: #222;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  border: 2px solid white;
+  background-color: var(--bg-secondary);
+  color: var(--txt-secondary);
+  padding: 30px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.icons {
+  font-size: 24px;
+  color: tomato;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.deskripsi {
+  font-size: 1em;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.btn {
+  margin-top: 16px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  background-color: red;
+  box-shadow: 1px 1px 1px 1px black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background-color: blue;
+  transition: all ease-in-out 0.5;
+}
+
+@media screen and (max-width: 476px) {
+  .card {
+    width: 95%;
+  }
+}
